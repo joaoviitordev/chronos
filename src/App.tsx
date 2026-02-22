@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/theme.css';
+import './styles/global.css';
+import { Heading } from './components/Heading';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+export function App() {
+    return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Heading>Olá, Mundo!</Heading>
+    
     </>
-  )
+    );
 }
 
-export default App
+
+/**
+*  o que eu "retorno" é o que será exibido la na página
+*  export { App }; => uma maneira de exportar 
+*  export function App () {} => outra maneira de exportar
+*  <> </> => é um elemento/fraguimento do React, funciona como um elemento pai, ex.: div, main, section
+*  no react não pode ter elementos filhos sem elementos pais
+*  o jsx te força ater sempre um elemento pai
+*  em jsx eu posso passar elementos dentro da tag do componente ex.: <Heading> Olá, Mundo! 1</Heading>, Olá, Mundo! 1 é children, mas tambem posso passar atributos na tag <Heading attr={123} attr2='ABC'> Olá, Mundo! 1</Heading>
+*/

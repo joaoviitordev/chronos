@@ -1,0 +1,32 @@
+O que é React ?
+
+R.:  é uma biblioteca JavaScript de código aberto, criada pelo Facebook em 2013, focada na construção de interfaces de usuário (UIs) interativas e reativas para aplicações web e móveis
+
+O que é um componente React ?
+
+R.: é uma função JavaScript (ou classe) independente e reutilizável que retorna elementos HTML, agindo como blocos de construção para interfaces de usuário
+
+O que são arquivos .tsx ?
+
+R.: são arquivos JavaScript que utilizam uma extensão de sintaxe chamada JSX (JavaScript XML), permitindo escrever estruturas semelhantes a HTML diretamente no código React. Eles facilitam a criação de componentes de interface, unindo marcação e lógica em um único arquivo, sendo posteriormente convertidos em JavaScript puro para o navegador.
+
+MEUS COMENTÁRIOS:
+
+Arquivo => App.tsx:
+
+/**
+*  o que eu "retorno" é o que será exibido la na página
+*  export { App }; => uma maneira de exportar 
+*  export function App () {} => outra maneira de exportar
+*  <> </> => é um elemento/fraguimento do React, funciona como um elemento pai, ex.: div, main, section
+*  no react não pode ter elementos filhos sem elementos pais
+*  o jsx te força ater sempre um elemento pai
+*/
+
+Arquivo => Heading.tsx:
+
+/**
+ * No jsx não tem class por que faz parte do próprio js, se usa className
+ * essa é uma forma de escopo {styles.heading}
+ * props => são propriedades do componente
+ */
