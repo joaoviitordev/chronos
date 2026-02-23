@@ -1,0 +1,26 @@
+/* gap: 2.4rem; => equivale a 24px */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menuLink {
+    color: var(--text-over-primary);
+    display: flex;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background-color: var(--primary);
+}
+
+.menuLink svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.menuLink:hover {
+    filter: brightness(80%);
+    transition: filter .4s;
+}

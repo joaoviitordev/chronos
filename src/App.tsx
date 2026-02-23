@@ -1,13 +1,20 @@
+import { ContainerPai } from './components/ContainerPai/index.tsx';
+import { Logo } from './components/Logo/index.tsx';
+import { Menu } from './components/Menu/index.tsx';
+
 import './styles/theme.css';
 import './styles/global.css';
-import { ContainerPai } from './components/ContainerPai/index.tsx';
 
 
 export function App() {
     return (
     <>
       <ContainerPai>
-        <section>LOGO</section>
+        <Logo></Logo>
+      </ContainerPai>
+
+      <ContainerPai>
+        <Menu />
       </ContainerPai>
     </>
     );
