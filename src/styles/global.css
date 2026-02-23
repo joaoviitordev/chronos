@@ -1,4 +1,6 @@
-/* Isso é CSS puro! */
+/* Isso é CSS puro! 
+   max-width: 98rem; => equivale a 98px
+*/
 
 * {
     margin: 0;
@@ -6,6 +8,16 @@
     box-sizing: border-box;
 }
 
-body {
-    
+html {
+    font-size: 62.5%;
 }
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    background: var(--gray-900);
+    color: var(--text-default);
+}
+
+
+

@@ -1,12 +1,14 @@
 import './styles/theme.css';
 import './styles/global.css';
-import { Heading } from './components/Heading';
+import { ContainerPai } from './components/ContainerPai/index.tsx';
+
 
 export function App() {
     return (
     <>
-        <Heading>Olá, Mundo!</Heading>
-    
+      <ContainerPai>
+        <section>LOGO</section>
+      </ContainerPai>
     </>
     );
 }
