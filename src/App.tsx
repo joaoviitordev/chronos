@@ -4,6 +4,7 @@ import { Menu } from './components/Menu/index.tsx';
 
 import './styles/theme.css';
 import './styles/global.css';
+import { Contador } from './components/Contador/index.tsx';
 
 
 export function App() {
@@ -15,6 +16,10 @@ export function App() {
 
       <ContainerPai>
         <Menu />
+      </ContainerPai>
+
+      <ContainerPai>
+        <Contador />
       </ContainerPai>
     </>
     );

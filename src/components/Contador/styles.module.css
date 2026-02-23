@@ -1,0 +1,9 @@
+/* gap: 2.4rem; => equivale a 24px */
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(8rem, 25vw, 18rem);
+    font-weight: bold;
+}
