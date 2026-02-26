@@ -25,7 +25,7 @@ export function App() {
       <ContainerPai>
         <form className='form' action="">
           <div className="formRow">
-            <DefaultInput id='id' type='text'/>
+            <DefaultInput labelText='Task' id='id' type='text' required placeholder='Digite sua tarefa...'/>
           </div>
 
           <div className="formRow">

@@ -1,12 +1,15 @@
+import styles from './styles.module.css';
+
 type DefaultInputProps = {
     id: string;
+    labelText?: string;  // esse ? informa ao Ts que a propriedade existe, mas é opcional.
 } & React.ComponentProps<'input'>;
 
-export function DefaultInput({ id, type }: DefaultInputProps) {
+export function DefaultInput({ id, type, labelText, ...rest }: DefaultInputProps) {
     return (
         <>
-            <label htmlFor={id}>Task</label>
-            <input id={id} type={type} />
+            {labelText && <label className={styles.label} htmlFor={id}>{labelText}</label>}
+            <input className={styles.input} id={id} type={type} {...rest}/>
         </>
     );
 }
@@ -29,4 +32,8 @@ export function DefaultInput({ id, type }: DefaultInputProps) {
  *  type DefaultInputProps = {} & React.ComponentProps<'input'>;
  * é a mesma ideia do intersection, mas nesse caso são as propriedades do componente e dai eu escolho
  * qual a propriedade.
+ * 
+ * labelText && <label htmlFor={id}>{labelText}</label> => isso é js, se tiver labellText && = exiba <label ...
+ * 
+ *  ...rest => o restante das propriedades que vinherem do input
  */
