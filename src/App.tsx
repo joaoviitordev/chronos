@@ -3,10 +3,12 @@ import { Logo } from './components/Logo/index.tsx';
 import { Menu } from './components/Menu/index.tsx';
 import { Contador } from './components/Contador/index.tsx';
 import { DefaultInput } from './components/Input/index.tsx';
+import { Ciclos } from './components/Ciclos/index.tsx';
+import { DefaultButton } from './components/DefaultButton/index.tsx';
+import { PlayCircleIcon } from 'lucide-react';
 
 import './styles/theme.css';
 import './styles/global.css';
-import { Ciclos } from './components/Ciclos/index.tsx';
 
 export function App() {
     return (
@@ -39,15 +41,10 @@ export function App() {
           </div>
 
           <div className="formRow">
-            <button>Enviar</button>
+            <DefaultButton icon={<PlayCircleIcon />} color='green'/>
           </div>
         </form>
       </ContainerPai>
     </>
     );
 }
-
-
-/**
- * 
- */

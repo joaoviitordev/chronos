@@ -12,7 +12,7 @@ R.: são arquivos JavaScript que utilizam uma extensão de sintaxe chamada JSX (
 
 MEUS COMENTÁRIOS:
 
-Arquivo => App.tsx:
+Arquivo => App:
 
 /**
 *  o que eu "retorno" é o que será exibido la na página
@@ -25,10 +25,36 @@ Arquivo => App.tsx:
 */
 
 
-Arquivo => Heading.tsx:
+Arquivo => Heading:
 
 /**
  * No jsx não tem class por que faz parte do próprio js, se usa className
  * essa é uma forma de escopo {styles.heading}
  * props => são propriedades do componente
+ */
+
+Arquivo => Input:
+
+/**
+ *  type DefaultInputProps = {
+ *    type: 'text' | 'number'; 
+ * }
+ *  em TS isso se chama union type (união de tipos) | = "ou"
+ *  
+ * 
+ *  type DefaultInputProps = {
+ *  type: 'number' | 'text';
+ * } & {  
+ *    abc: string;
+ * }; 
+ *  esse & é chamado de intersection, ele serve pra unir tudas as propriedades do objeto.
+ * 
+ * 
+ *  type DefaultInputProps = {} & React.ComponentProps<'input'>;
+ * é a mesma ideia do intersection, mas nesse caso são as propriedades do componente e dai eu escolho
+ * qual a propriedade.
+ * 
+ * labelText && <label htmlFor={id}>{labelText}</label> => isso é js, se tiver labellText && = exiba <label ...
+ * 
+ *  ...rest => o restante das propriedades que vinherem do input
  */
