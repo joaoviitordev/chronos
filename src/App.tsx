@@ -6,6 +6,7 @@ import { DefaultInput } from './components/Input/index.tsx';
 
 import './styles/theme.css';
 import './styles/global.css';
+import { Ciclos } from './components/Ciclos/index.tsx';
 
 export function App() {
     return (
@@ -29,7 +30,7 @@ export function App() {
           </div>
 
           <div className="formRow">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <Ciclos />
           </div>
 
           <div className="formRow">
